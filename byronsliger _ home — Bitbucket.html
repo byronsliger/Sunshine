@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://bitbucket.org/ -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8"><script type="text/javascript" src="./byronsliger _ home — Bitbucket_files/a2cef8c3d3"></script><script src="./byronsliger _ home — Bitbucket_files/nr-768.min.js"></script><script type="text/javascript" async="" src="./byronsliger _ home — Bitbucket_files/inpage_linkid.js" id="undefined"></script><script src="./byronsliger _ home — Bitbucket_files/ga.js" async="true"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwMGVVZSGwIIUFBQDwU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"a2cef8c3d3","agent":"js-agent.newrelic.com/nr-768.min.js","transactionName":"Z11RZxdWW0cEVkYLDV4XdUYLVEFdClsdAAtEWkZQDlJBGgRFQhFMXVlBWABDXFoCG0QLB0dLCUEKWEE=","userAttributes":"SxpaQDpWQEANUFwWC1NZR1YBFQ9AF0BXTkBZS2xSFV4XDgNUXhEHHBpGQABFaloEWFdAWBJaSkEKWUZYDFJXEEBN","applicationID":"1841284","errorBeacon":"bam.nr-data.net","applicationTime":132}</script>
+  <title>
+  byronsliger / home — Bitbucket
+</title>
+  
+
+
+<meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+
+<meta name="description" content="">
+<meta name="bb-view-name" content="bitbucket.apps.dashboard.views.dashboard_overview">
+<meta name="ignore-whitespace" content="False">
+<meta name="tab-size" content="None">
+
+<meta name="application-name" content="Bitbucket">
+<meta name="apple-mobile-web-app-title" content="Bitbucket">
+<meta name="theme-color" content="#205081">
+<meta name="msapplication-TileColor" content="#205081">
+<meta name="msapplication-TileImage" content="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/logos/bitbucket/white-256.png">
+<link rel="apple-touch-icon" sizes="192x192" type="image/png" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720//img/bitbucket_avatar/192/bitbucket.png">
+<link rel="icon" sizes="192x192" type="image/png" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720//img/bitbucket_avatar/192/bitbucket.png">
+<link rel="icon" sizes="16x16 32x32" type="image/x-icon" href="https://bitbucket.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://bitbucket.org/opensearch.xml" title="Bitbucket">
+
+  
+  
+    
+  
+
+
+
+  <link rel="stylesheet" href="./byronsliger _ home — Bitbucket_files/vendor.css">
+<link rel="stylesheet" href="./byronsliger _ home — Bitbucket_files/app.css">
+
+
+  
+  
+  
+  
+
+  <link href="https://bitbucket.org/byronsliger/rss/feed?token=2eced8252fd985dcfb07f21738ce0bba" rel="alternate" type="application/rss+xml" title="RSS feed for byronsliger">
+
+
+<style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css">.fancybox-margin{margin-right:15px;}</style></head>
+<body class="production mac chrome" data-static-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/" data-base-url="https://bitbucket.org" data-no-avatar-image="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/default_avatar/16/user_blue.png" data-current-user="{&quot;username&quot;: &quot;byronsliger&quot;, &quot;displayName&quot;: &quot;Byron Sliger&quot;, &quot;uuid&quot;: &quot;{ea5454da-ed60-4dd3-9375-0eecb5db7726}&quot;, &quot;firstName&quot;: &quot;Byron&quot;, &quot;avatarUrl&quot;: &quot;https://bitbucket.org/account/byronsliger/avatar/32/?ts=0&quot;, &quot;lastName&quot;: &quot;Sliger&quot;, &quot;isTeam&quot;: false, &quot;isSshEnabled&quot;: false, &quot;isKbdShortcutsEnabled&quot;: false, &quot;id&quot;: 3588817, &quot;isAuthenticated&quot;: true}" data-atlassian-id="{&quot;loginStatusUrl&quot;: &quot;https://id.atlassian.com/profile/rest/profile&quot;}" data-settings="{&quot;MENTIONS_MIN_QUERY_LENGTH&quot;: 3}" data-ga-commands="[{&quot;customVarScope&quot;: &quot;1&quot;, &quot;customVarSlot&quot;: &quot;1&quot;, &quot;customVarName&quot;: &quot;isBBUser&quot;, &quot;type&quot;: &quot;setCustomVar&quot;, &quot;customVarValue&quot;: &quot;true&quot;}]" data-aui-version="5.9.0">
+<script src="./byronsliger _ home — Bitbucket_files/early.js"></script>
+
+<div id="page">
+  <div id="wrapper">
+    
+  
+
+
+    <header id="header" role="banner">
+      
+  
+  
+
+
+      <nav class="aui-header aui-dropdown2-trigger-group" role="navigation" data-aui-responsive="true">
+        <div class="aui-header-inner">
+        <div class="aui-header-primary">
+          
+  
+  <div class="aui-header-before">
+    <button class="app-switcher-trigger aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-controls="app-switcher" aria-haspopup="true" tabindex="0" resolved="" aria-expanded="false" href="#">
+      <span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked applications</span>
+    </button>
+    
+      <nav id="app-switcher" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+        <div class="aui-dropdown2-section blank-slate">
+          <h2>Connect Bitbucket with other great Atlassian products:</h2>
+          <dl>
+            <dt class="jira">JIRA</dt>
+            <dd>Project and issue tracking</dd>
+            <dt class="confluence">Confluence</dt>
+            <dd>Collaboration and content sharing</dd>
+            <dt class="bamboo">Bamboo</dt>
+            <dd>Continuous integration</dd>
+          </dl>
+          <ul>
+            <li>
+              <a href="https://www.atlassian.com/ondemand/signup/?product=jira.ondemand,com.atlassian.bitbucket&utm_source=bitbucket&utm_medium=button&utm_campaign=app_switcher&utm_content=trial_button" class="aui-button aui-button-primary" target="_blank" id="ondemand-trial" resolved="">Free trial</a>
+            </li>
+            <li>
+              <a href="https://www.atlassian.com/software?utm_source=bitbucket&utm_medium=button&utm_campaign=app_switcher&utm_content=learn_more_button#cloud-products" class="aui-button" target="_blank" id="ondemand-learn-more" resolved="">Saber más</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+  </div>
+
+
+          
+            <h1 class="aui-header-logo aui-header-logo-bitbucket " id="logo">
+              <a href="./byronsliger _ home — Bitbucket_files/byronsliger _ home — Bitbucket.html">
+                <span class="aui-header-logo-device">Bitbucket</span>
+              </a>
+            </h1>
+          
+          
+  
+<script id="repo-dropdown-template" type="text/html">
+    
+
+[[#hasViewed]]
+  <div class="aui-dropdown2-section">
+    <strong class="viewed">Visto recientemente</strong>
+    <ul class="aui-list-truncate">
+      [[#viewed]]
+        <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+          <a href="[[url]]" title="[[owner]]/[[name]]" class="aui-icon-container recently-viewed repo-link">
+            <img class="repo-avatar size16" src="[[{avatar}]]" alt="[[owner]]/[[name]] avatar"/>
+            [[owner]] / [[name]]
+          </a>
+        </li>
+      [[/viewed]]
+    </ul>
+  </div>
+[[/hasViewed]]
+[[#hasUpdated]]
+<div class="aui-dropdown2-section">
+  <strong class="updated">Actualizado recientemente</strong>
+  <ul class="aui-list-truncate">
+    [[#updated]]
+    <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+      <a href="[[url]]" title="[[owner]]/[[name]]" class="aui-icon-container recently-updated repo-link">
+        <img class="repo-avatar size16" src="[[{avatar}]]" alt="[[owner]]/[[name]] avatar"/>
+        [[owner]] / [[name]]
+      </a>
+    </li>
+    [[/updated]]
+  </ul>
+</div>
+[[/hasUpdated]]
+
+  </script>
+<script id="snippet-dropdown-template" type="text/html">
+    <div class="aui-dropdown2-section">
+  <strong>[[sectionTitle]]</strong>
+  <ul class="aui-list-truncate">
+    [[#snippets]]
+      <li>
+        <a href="[[links.html.href]]">[[owner.display_name]] / [[name]]</a>
+      </li>
+    [[/snippets]]
+  </ul>
+</div>
+
+  </script>
+<ul class="aui-nav" style="width: auto;" resolved="">
+  
+    <li>
+      <a class="aui-dropdown2-trigger selected" aria-haspopup="true" href="https://bitbucket.org/#" id="dashboard-dropdown-trigger" resolved="" aria-controls="dashboard-dropdown" aria-expanded="false">
+        Dashboard
+        <span class="aui-icon-dropdown"></span>
+      </a>
+      <nav id="dashboard-dropdown" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+        <div class="aui-dropdown2-section">
+          <ul>
+            
+              <li>
+                <a href="https://bitbucket.org/dashboard/overview">Resumen</a>
+              </li>
+            
+              <li>
+                <a href="https://bitbucket.org/dashboard/pullrequests">Pull requests</a>
+              </li>
+            
+              <li>
+                <a href="https://bitbucket.org/dashboard/issues">Incidencias</a>
+              </li>
+            
+              <li>
+                <a href="https://bitbucket.org/snippets/">Fragmentos de código</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </li>
+    
+      <li>
+        <script id="team-dropdown-template" type="text/html">
+    
+
+<div class="aui-dropdown2-section primary">
+  <ul class="aui-list-truncate">
+    [[#teams]]
+      <li>
+        <a href="/[[username]]/" class="aui-icon-container team-link">
+          <span class="aui-avatar aui-avatar-xsmall">
+            <span class="aui-avatar-inner">
+              <img src="[[avatar]]">
+            </span>
+          </span>
+          [[display_name]]
+        </a>
+      </li>
+    [[/teams]]
+  </ul>
+</div>
+
+<div class="aui-dropdown2-section">
+  <ul>
+    <li>
+      <a href="/account/create-team/?team_source=header"
+          data-modules="registration/create-team-link"
+          id="create-team-link">Crear equipo</a>
+    </li>
+  </ul>
+</div>
+
+  </script>
+        <a class="aui-dropdown2-trigger" href="https://bitbucket.org/#" id="teams-dropdown-trigger" data-modules="header/teams-dropdown" aria-haspopup="true" resolved="" aria-controls="teams-dropdown" aria-expanded="false">
+          Equipos
+          <span class="aui-icon-dropdown"></span>
+        </a>
+        <div id="teams-dropdown" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+          <div class="aui-dropdown2-section blank-slate">
+            <p>Organize your team's work and supercharge repository administration.</p>
+            <ul>
+              <li>
+                <a class="aui-button aui-button-primary" id="create-team-blank-slate" href="https://bitbucket.org/account/create-team/?team_source=menu_blank" resolved="">Crear equipo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <a class="aui-dropdown2-trigger" id="repositories-dropdown-trigger" aria-haspopup="true" href="https://bitbucket.org/#" resolved="" aria-controls="repo-dropdown" aria-expanded="false">
+        Repositorios
+        <span class="aui-icon-dropdown"></span>
+      </a>
+      <nav id="repo-dropdown" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+        <div class="aui-dropdown2-section">
+    <strong class="viewed">Visto recientemente</strong>
+    <ul class="aui-list-truncate">
+        <li class="private repository">
+          <a href="https://bitbucket.org/albertc87/sunshine" title="albertc87/Sunshine" class="aui-icon-container recently-viewed repo-link">
+            <img class="repo-avatar size16" src="./byronsliger _ home — Bitbucket_files/saved_resource" alt="albertc87/Sunshine avatar">
+            albertc87 / Sunshine
+          </a>
+        </li>
+        <li class="private repository">
+          <a href="https://bitbucket.org/albertc87/wishlist" title="albertc87/wishlist" class="aui-icon-container recently-viewed repo-link">
+            <img class="repo-avatar size16" src="./byronsliger _ home — Bitbucket_files/saved_resource(1)" alt="albertc87/wishlist avatar">
+            albertc87 / wishlist
+          </a>
+        </li>
+        <li class="private repository">
+          <a href="https://bitbucket.org/byronsliger/sunshine" title="byronsliger/Sunshine" class="aui-icon-container recently-viewed repo-link">
+            <img class="repo-avatar size16" src="./byronsliger _ home — Bitbucket_files/saved_resource(2)" alt="byronsliger/Sunshine avatar">
+            byronsliger / Sunshine
+          </a>
+        </li>
+    </ul>
+  </div>
+<div class="aui-dropdown2-section">
+  <strong class="updated">Actualizado recientemente</strong>
+  <ul class="aui-list-truncate">
+    <li class="private repository">
+      <a href="https://bitbucket.org/byronsliger/sunshine" title="byronsliger/Sunshine" class="aui-icon-container recently-updated repo-link">
+        <img class="repo-avatar size16" src="./byronsliger _ home — Bitbucket_files/saved_resource(2)" alt="byronsliger/Sunshine avatar">
+        byronsliger / Sunshine
+      </a>
+    </li>
+  </ul>
+</div>
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              <a href="https://bitbucket.org/repo/create" class="new-repository" id="create-repo-link">
+                Crear repositorio
+              </a>
+            </li>
+            <li>
+              <a href="https://bitbucket.org/repo/import" class="import-repository" id="import-repo-link">
+                Importar repositorio
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </li>
+    <li>
+      <a class="aui-dropdown2-trigger" id="snippets-dropdown-trigger" aria-haspopup="true" href="https://bitbucket.org/#" resolved="" aria-controls="nav-recent-snippets" aria-expanded="false">
+        Fragmentos de código
+        <span class="aui-icon-dropdown"></span>
+      </a>
+      <nav id="nav-recent-snippets" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+        <div id="snippet-dropdown-recent" class="aui-dropdown2-section" data-modules="snippets/recent-list"><div class="aui-dropdown2-section">
+  <strong>Visto recientemente</strong>
+  <ul class="aui-list-truncate">
+      <li>
+        <a href="https://bitbucket.org/snippets/byronsliger/7Enxj">Byron Sliger / 7Enxj: Sin título</a>
+      </li>
+  </ul>
+</div><div class="aui-dropdown2-section">
+  <strong>Actualizado recientemente</strong>
+  <ul class="aui-list-truncate">
+      <li>
+        <a href="https://bitbucket.org/snippets/byronsliger/7Enxj">Byron Sliger / 7Enxj: Sin título</a>
+      </li>
+  </ul>
+</div></div>
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              <a href="https://bitbucket.org/snippets/new">
+                Crear fragmentos de código
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </li>
+    <li>
+      <button class="aui-button aui-button-primary aui-dropdown2-trigger" aria-owns="create-cta-dropdown" aria-haspopup="true" aria-controls="create-cta-dropdown" resolved="" aria-expanded="false" href="#">
+        Crear<span class="aui-icon-dropdown"></span>
+      </button>
+      <nav id="create-cta-dropdown" class="aui-dropdown2 aui-style-default aui-dropdown2-in-header aui-layer" aria-hidden="true" resolved="">
+        <div class="aui-dropdown2-section">
+          <ul>
+            
+              <li>
+                <a href="https://bitbucket.org/repo/create">Crear repositorio</a>
+              </li>
+            
+              <li>
+                <a href="https://bitbucket.org/snippets/new">Crear fragmentos de código</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </li>
+  
+</ul>
+
+        </div>
+        <div class="aui-header-secondary">
+          
+  
+
+<ul role="menu" class="aui-nav" resolved="">
+  
+  <li>
+    <form action="https://bitbucket.org/repo/all" method="get" class="aui-quicksearch">
+      <label for="search-query" class="assistive">owner/repository</label>
+      <input id="search-query" class="bb-repo-typeahead" type="text" placeholder="Find a repository…" name="name" autocomplete="off" data-bb-typeahead-focus="false">
+    </form>
+  </li>
+  <li id="ace-stp-menu">
+    <a id="ace-stp-menu-link" class="aui-nav-link" href="https://bitbucket.org/#" aria-controls="super-touch-point-dialog" data-aui-trigger="" aria-expanded="false" aria-haspopup="true" resolved="">
+  <span id="ace-stp-menu-icon" class="aui-icon aui-icon-small aui-iconfont-help"></span>
+</a>
+  </li>
+  
+    
+  
+  
+    <li>
+      <a class="aui-dropdown2-trigger" aria-haspopup="true" data-container="#header .aui-header-inner" href="https://bitbucket.org/#" title="byronsliger" id="user-dropdown-trigger" resolved="" aria-controls="user-dropdown" aria-expanded="false">
+        <div class="aui-avatar aui-avatar-small">
+            <div class="aui-avatar-inner">
+                <img src="./byronsliger _ home — Bitbucket_files/saved_resource(3)" class="" data-src-url="https://bitbucket.org/account/byronsliger/avatar/32/?ts=0" data-src-url-2x="https://bitbucket.org/account/byronsliger/avatar/64/?ts=0" alt="Iniciado como byronsliger" height="24" width="24">
+            </div>
+        </div>
+      </a>
+      <nav id="user-dropdown" class="aui-dropdown2 aui-style-default aui-layer" aria-hidden="true" resolved="">
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              <a href="https://bitbucket.org/byronsliger/" id="profile-link">Ver perfil</a>
+            </li>
+            <li>
+              <a href="https://bitbucket.org/account/user/byronsliger/" id="account-link" data-ct="navbar.dropdown.manage_account">Administrar cuenta</a>
+            </li>
+            <li>
+              <a href="https://bitbucket.org/account/user/byronsliger/addon-directory" id="account-addons" data-ct="navbar.dropdown.addons">Complementos</a>
+            </li>
+            <li>
+              <a href="https://bitbucket.org/account/notifications/" id="inbox-link">Bandeja de entrada</a>
+            </li>
+            <li>
+              <a href="https://bitbucket.org/#general-invite" class="general-invite-link" id="general-invite-dropdown" data-modules="header/general-invite">Invitar a un amigo</a>
+              <script id="general-invite-template" type="text/html">
+    
+<div id="general-invite">
+  <form class="aui invitation-form" id="general-invite-form" method="post" novalidate>
+    <div class="error aui-message hidden">
+      <span class="aui-icon icon-error"></span>
+      <div class="message"></div>
+    </div>
+    <div class="field-group">
+      <label for="id_general_email_address">Correo electrónico</label>
+      <input type="email" id="id_general_email_address" name="email-address" class="text long-field">
+    </div>
+  </form>
+</div>
+
+  </script>
+            </li>
+          </ul>
+        </div>
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              
+                <a href="https://bitbucket.org/account/signout/" id="log-out-link">Cerrar sesión.</a>
+              
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </li>
+  
+</ul>
+
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    
+  
+
+<header id="account-warning" role="banner" data-modules="header/account-warning" class="aui-message-banner warning
+        ">
+  <div class="aui-message-banner-inner">
+    <span class="aui-icon aui-icon-warning"></span>
+    <span class="message">
+    
+    </span>
+  </div>
+</header>
+
+
+
+    
+  
+<header id="aui-message-bar">
+  
+</header>
+
+
+    <div id="content" role="main">
+      
+  <header id="dashboard-header" class="aui-page-header">
+    <div class="aui-page-header-inner">
+      <div class="aui-page-header-main">
+        <h1>Dashboard</h1>
+      </div>
+    </div>
+  </header>
+  <nav id="dashboard-tabs" class="aui-navgroup aui-navgroup-horizontal aui-navgroup-horizontal-roomy">
+    <div class="aui-navgroup-inner">
+      <div class="aui-navgroup-primary">
+        <ul class="aui-nav" resolved="">
+          
+            <li id="overview-tab" class="aui-nav-selected">
+              <a href="https://bitbucket.org/dashboard/overview">
+                <span class="aui-nav-item-label">Resumen</span>
+                
+              </a>
+            </li>
+          
+            <li id="pullrequests-tab">
+              <a href="https://bitbucket.org/dashboard/pullrequests">
+                <span class="aui-nav-item-label">Pull requests</span>
+                
+              </a>
+            </li>
+          
+            <li id="issues-tab">
+              <a href="https://bitbucket.org/dashboard/issues">
+                <span class="aui-nav-item-label">Incidencias</span>
+                
+              </a>
+            </li>
+          
+            <li id="snippets-tab">
+              <a href="https://bitbucket.org/snippets/">
+                <span class="aui-nav-item-label">Fragmentos de código</span>
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      
+  <div class="aui-page-panel" id="dashboard">
+    <div class="aui-page-panel-inner">
+      <div class="aui-page-panel-content maskable" id="dashboard-container" data-modules="dashboard/index">
+        
+  
+
+
+  <div id="dashboard-overview" class="dashboard-section aui-group" data-modules="dashboard/overview">
+  
+  <section class="aui-item" id="repositories-container">
+    <div>
+      <div class="filter-container">
+        
+          <p class="filter-label">Filtros:</p>
+          <ul class="filter-status" data-filter-term="section">
+            <li id="all" aria-pressed="true">
+    <a href="https://bitbucket.org/dashboard/overview" data-status="all">
+      
+              Todos
+            
+    </a>
+  </li>
+            <li id="watching">
+    <a href="https://bitbucket.org/dashboard/overview" data-status="watching">
+      
+              Viendo
+            
+    </a>
+  </li>
+            <li id="mine">
+    <a href="https://bitbucket.org/dashboard/overview" data-status="mine">
+      
+              Mine
+            
+    </a>
+  </li>
+            <li id="teams">
+    <a href="https://bitbucket.org/dashboard/overview" data-status="teams">
+      
+              Equipos
+            
+    </a>
+  </li>
+          </ul>
+        
+
+        <form id="repo-filter" class="filter-search" data-search-term="search" data-url="/dashboard/overview">
+          <input type="search" value="" placeholder="Buscar repositorios">
+        </form>
+      </div>
+    </div>
+    <div id="repositories-pjax">
+      
+  <div class="maskable">
+    
+    
+    
+    
+      
+
+<ul class="repository-list iterable-list" data-current-status="all">
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/byronsliger/sunshine">
+            <img src="./byronsliger _ home — Bitbucket_files/android_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/android_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/android_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/byronsliger/sunshine">byronsliger / Sunshine</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-11-03T18:03:27.722-05:00" title="3 November 2015 18:03">14 hours ago</time>
+        
+      </span>
+    </li>
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/albertc87/sunshine">
+            <img src="./byronsliger _ home — Bitbucket_files/android_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/android_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/android_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/albertc87/sunshine">albertc87 / Sunshine</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-08-20T23:00:13.983-05:00" title="20 August 2015 23:00">2015-08-20</time>
+        
+      </span>
+    </li>
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/albertc87/wishlist">
+            <img src="./byronsliger _ home — Bitbucket_files/js_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/js_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/js_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/albertc87/wishlist">albertc87 / wishlist</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-06-23T20:01:05.257-05:00" title="23 June 2015 20:01">2015-06-23</time>
+        
+      </span>
+    </li>
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/albertc87/wishlist-backend">
+            <img src="./byronsliger _ home — Bitbucket_files/php_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/php_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/php_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/albertc87/wishlist-backend">albertc87 / wishlist-backend</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-06-16T00:15:01.183-05:00" title="16 June 2015 00:15">2015-06-16</time>
+        
+      </span>
+    </li>
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/albertc87/siloapp">
+            <img src="./byronsliger _ home — Bitbucket_files/html5_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/html5_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/html5_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/albertc87/siloapp">albertc87 / siloApp</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-05-26T20:07:47.714-05:00" title="26 May 2015 20:07">2015-05-26</time>
+        
+      </span>
+    </li>
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/albertc87/silo-web">
+            <img src="./byronsliger _ home — Bitbucket_files/php_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/php_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/php_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/albertc87/silo-web">albertc87 / silo web</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-05-25T17:49:41.516-05:00" title="25 May 2015 17:49">2015-05-25</time>
+        
+      </span>
+    </li>
+  
+    
+    <li class="iterable-item">
+      <span class="aui-avatar aui-avatar-medium aui-avatar-project iterable-avatar">
+        <span class="aui-avatar-inner">
+          <a class="iterable-avatar-link" href="https://bitbucket.org/albertc87/siloconsumer">
+            <img src="./byronsliger _ home — Bitbucket_files/php_32.png" class="" data-src-url="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/php_32.png" data-src-url-2x="https://d3oaxc4q5k2d6q.cloudfront.net/m/b2097ad76720/img/language-avatars/php_64.png" alt="">
+          </a>
+        </span>
+      </span>
+      <span class="iterable-name">
+        <a class="execute" href="https://bitbucket.org/albertc87/siloconsumer">albertc87 / siloConsumer</a>
+        
+          <span class="aui-icon aui-icon-small aui-iconfont-locked"></span>
+        
+      </span>
+      <span class="iterable-meta">
+        
+          Updated <time datetime="2015-05-25T17:40:31.149-05:00" title="25 May 2015 17:40">2015-05-25</time>
+        
+      </span>
+    </li>
+  
+</ul>
+
+
+    
+  </div>
+
+    </div>
+  </section>
+  
+
+  <div class="aui-item sidebar">
+    
+    <div class="dashboard-announcement">
+      
+      <section class="activity">
+  <h2>Latest updates</h2>
+  <div class="newsfeed">
+  
+    <article class="news-item">
+      <a href="https://bitbucket.org/bitbucket/">
+        <div class="aui-avatar aui-avatar-small">
+            <div class="aui-avatar-inner">
+              <img alt="Atlassian Bitbucket" src="./byronsliger _ home — Bitbucket_files/saved_resource(4)" class="" data-src-url="https://bitbucket.org/account/bitbucket/avatar/48/?ts=1441796091" data-src-url-2x="https://bitbucket.org/account/bitbucket/avatar/96/?ts=1441796091">
+            </div>
+        </div>
+      </a>
+      
+        <div class="news-item-title">
+          <a href="https://bitbucket.org/whats-new/plan-improvements#feature_plan-improvements" data-ct="dashboard.ad.link" data-ct-data="{&quot;type&quot;: &quot;feature&quot;, &quot;slug&quot;: &quot;plan-improvements&quot;}">Improved 'Plan details' page</a>
+        </div>
+        <div class="news-item-description">
+          <p>Our new plan details page is much faster, especially for large teams with many repositories. We've made it easier to look up each user's access permissions and clarified what happens when you remove someone from your team.</p>
+        </div>
+        
+      
+    </article>
+    
+    <article class="news-item">
+      <a href="https://bitbucket.org/bitbucket/">
+        <div class="aui-avatar aui-avatar-small">
+            <div class="aui-avatar-inner">
+              <img alt="Atlassian Bitbucket" src="./byronsliger _ home — Bitbucket_files/saved_resource(4)" class="" data-src-url="https://bitbucket.org/account/bitbucket/avatar/48/?ts=1441796091" data-src-url-2x="https://bitbucket.org/account/bitbucket/avatar/96/?ts=1441796091">
+            </div>
+        </div>
+      </a>
+      
+        <div class="news-item-title">
+          <a href="https://bitbucket.org/whats-new/two-step#feature_two-step" data-ct="dashboard.ad.link" data-ct-data="{&quot;type&quot;: &quot;feature&quot;, &quot;slug&quot;: &quot;two-step&quot;}">Two-step verification is here</a>
+        </div>
+        <div class="news-item-description">
+          <p>Secure your account with two-step verification. Your account stays secure even if your password is compromised.</p>
+        </div>
+        
+        <div>
+          <a href="https://bitbucket.org/account/two-step-verification/" data-ct="dashboard.ad.cta" data-ct-data="{&quot;type&quot;: &quot;feature&quot;, &quot;slug&quot;: &quot;two-step&quot;}">Enable now!</a>
+        </div>
+        
+      
+    </article>
+    
+  </div>
+
+</section>
+
+    </div>
+    
+    <section class="activity">
+      <h2>
+        Actividad reciente
+        
+        <a href="https://bitbucket.org/byronsliger/rss/feed?token=2eced8252fd985dcfb07f21738ce0bba" title="Subscribe to this newsfeed" class="rss"><span class="aui-icon aui-icon-small aui-iconfont-rss rss-icon">Subscribe to this newsfeed</span></a>
+      </h2>
+      
+        
+  <div class="newsfeed">
+    
+      
+        
+
+<article class="news-item create">
+  
+    <a href="https://bitbucket.org/byronsliger/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="Byron Sliger" src="./byronsliger _ home — Bitbucket_files/saved_resource(5)" class="" data-src-url="https://bitbucket.org/account/byronsliger/avatar/48/?ts=0" data-src-url-2x="https://bitbucket.org/account/byronsliger/avatar/96/?ts=0">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+    
+    <a href="https://bitbucket.org/byronsliger/sunshine" title="byronsliger/sunshine">
+      byronsliger/sunshine
+    </a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Repository created
+
+  </div>
+  
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/byronsliger/">Byron Sliger</a>
+  
+    ·
+    <time datetime="2015-11-03T18:03:29-05:00" title="3 November 2015 18:03">14 hours ago</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/sunshine/commits/ed3ab0d66810b5517ae7b0cbe1cd2b745da3e221">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/sunshine" title="albertc87/sunshine">
+      albertc87/sunshine
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/sunshine/commits/ed3ab0d66810b5517ae7b0cbe1cd2b745da3e221" class="changeset-hash">ed3ab0d</a>
+          
+            
+            final
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-20T23:00:15-05:00" title="20 August 2015 23:00">2015-08-20</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/sunshine/commits/982c7eae9bd233e6bc8788e9c147b6f11a689691">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/sunshine" title="albertc87/sunshine">
+      albertc87/sunshine
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/sunshine/commits/982c7eae9bd233e6bc8788e9c147b6f11a689691" class="changeset-hash">982c7ea</a>
+          
+            
+            Lesson 6
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-20T16:45:24-05:00" title="20 August 2015 16:45">2015-08-20</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/sunshine/commits/1994033cce949ff0cd4de2d4148824d7b12f8ac7">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/sunshine" title="albertc87/sunshine">
+      albertc87/sunshine
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/sunshine/commits/1994033cce949ff0cd4de2d4148824d7b12f8ac7" class="changeset-hash">1994033</a>
+          
+            
+            Mid 5
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-19T22:38:27-05:00" title="19 August 2015 22:38">2015-08-19</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/sunshine/commits/5d9ab58b81345b0a5e17804d1e556eed176d0e12">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/sunshine" title="albertc87/sunshine">
+      albertc87/sunshine
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/sunshine/commits/5d9ab58b81345b0a5e17804d1e556eed176d0e12" class="changeset-hash">5d9ab58</a>
+          
+            
+            Lesson 5-6
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-19T16:51:54-05:00" title="19 August 2015 16:51">2015-08-19</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/sunshine/commits/62d199d66ccc64c641b1c312ec431338bc4a9295">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/sunshine" title="albertc87/sunshine">
+      albertc87/sunshine
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/sunshine/commits/62d199d66ccc64c641b1c312ec431338bc4a9295" class="changeset-hash">62d199d</a>
+          
+            
+            First commit
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-18T16:47:19-05:00" title="18 August 2015 16:47">2015-08-18</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item delete">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  albertc87/sunshine
+
+  </div>
+  <div class="news-item-description">
+    
+  Repository deleted
+
+  </div>
+  
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-18T16:35:08-05:00" title="18 August 2015 16:35">2015-08-18</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    1 commit
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    albertc87/sunshine
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          
+            <span class="changeset-hash">6576281</span>
+            
+            Mid 4C
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-13T16:42:14-05:00" title="13 August 2015 16:42">2015-08-13</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    1 commit
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    albertc87/sunshine
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          
+            <span class="changeset-hash">9661e45</span>
+            
+            Finalize lesson 4B
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-12T16:56:25-05:00" title="12 August 2015 16:56">2015-08-12</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    1 commit
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    albertc87/sunshine
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          
+            <span class="changeset-hash">b7bca8f</span>
+            
+            Git ignore and unfollow files
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-12T00:01:46-05:00" title="12 August 2015 00:01">2015-08-12</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    1 commit
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    albertc87/sunshine
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          
+            <span class="changeset-hash">4238f63</span>
+            
+            until lesson 4C
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-08-11T23:50:07-05:00" title="11 August 2015 23:50">2015-08-11</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    1 commit
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    albertc87/sunshine
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          
+            <span class="changeset-hash">e0cee0f</span>
+            
+            Database Access
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-07-31T17:12:43-05:00" title="31 July 2015 17:12">2015-07-31</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    1 commit
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    albertc87/sunshine
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          
+            <span class="changeset-hash">b9e0cce</span>
+            
+            Initial commit
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-07-31T08:46:35-05:00" title="31 July 2015 08:46">2015-07-31</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/wishlist/commits/d62da1eebe0d1aed408f8171496533f267f6e8ea">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/wishlist" title="albertc87/wishlist">
+      albertc87/wishlist
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/wishlist/commits/d62da1eebe0d1aed408f8171496533f267f6e8ea" class="changeset-hash">d62da1e</a>
+          
+            
+            Actualizado con botón para borrar el campo de búsqueda
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-06-23T20:01:06-05:00" title="23 June 2015 20:01">2015-06-23</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/wishlist/commits/57efbb15fc92419569d8cf0ab750ce5f61d59f14">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/wishlist" title="albertc87/wishlist">
+      albertc87/wishlist
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/wishlist/commits/57efbb15fc92419569d8cf0ab750ce5f61d59f14" class="changeset-hash">57efbb1</a>
+          
+            
+            Reorganizar items menu principal
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-06-12T13:04:53-05:00" title="12 June 2015 13:04">2015-06-12</time>
+  </div>
+</article>
+      
+    
+      
+        
+
+<article class="news-item pushed">
+  
+    <a href="https://bitbucket.org/albertc87/">
+      <div class="aui-avatar aui-avatar-small">
+          <div class="aui-avatar-inner">
+            <img alt="albertc87" src="./byronsliger _ home — Bitbucket_files/saved_resource(6)" class="" data-src-url="https://bitbucket.org/account/albertc87/avatar/48/?ts=1443940009" data-src-url-2x="https://bitbucket.org/account/albertc87/avatar/96/?ts=1443940009">
+          </div>
+      </div>
+    </a>
+  
+
+  <div class="news-item-title">
+    
+  
+  
+  
+    <a href="https://bitbucket.org/albertc87/wishlist/commits/ebaeaa3fc6ce16e9c920d8649d0db795a73749ea">1 commit</a>
+  
+
+  </div>
+  <div class="news-item-description">
+    
+  Pushed to 
+    
+    <a href="https://bitbucket.org/albertc87/wishlist" title="albertc87/wishlist">
+      albertc87/wishlist
+    </a>
+  
+
+  </div>
+  
+  <div class="changesets">
+    
+      <div class="changeset">
+        
+          <a href="https://bitbucket.org/albertc87/wishlist/commits/ebaeaa3fc6ce16e9c920d8649d0db795a73749ea" class="changeset-hash">ebaeaa3</a>
+          
+            
+            HU011: Interfaz grafica de búsqueda...
+          
+        
+      </div>
+    
+    
+  </div>
+
+  <div class="news-item-info">
+    
+    
+  
+
+  
+    <a href="https://bitbucket.org/albertc87/">albertc87</a>
+  
+    ·
+    <time datetime="2015-06-11T23:05:23-05:00" title="11 June 2015 23:05">2015-06-11</time>
+  </div>
+</article>
+      
+    
+  </div>
+
+      
+    </section>
+  </div>
+</div>
+
+
+  <script id="user-avatar-template" type="text/html">
+    <span class="aui-avatar aui-avatar-[[ size ]] [[extra_classes]]">
+  <span class="aui-avatar-inner">
+    <img src="[[ default_url ]]" data-src-url="[[ avatar_url ]]"
+        class="deferred-image" data-src-url-2x="[[ avatar_url_2x ]]"
+        title="[[ name ]]">
+  </span>
+</span>
+
+  </script>
+  <script id="project-avatar-template" type="text/html">
+    <span class="aui-avatar aui-avatar-project aui-avatar-[[size]] [[extra_classes]]">
+  <span class="aui-avatar-inner">
+    <img src="[[default_url]]" class="project-avatar-img deferred-image"
+        data-src-url="[[avatar_url]]" data-src-url-2x="[[avatar_url_2x]]">
+  </span>
+</span>
+
+  </script>
+
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+  <footer id="footer" role="contentinfo" data-modules="components/footer">
+    <section class="footer-body">
+      
+  <ul>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="Blog" href="http://blog.bitbucket.org/" original-title="">Blog</a>
+  </li>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="Home" href="https://bitbucket.org/support" original-title="">Support</a>
+  </li>
+  <li>
+    <a class="support-ga" data-support-gaq-page="PlansPricing" href="https://bitbucket.org/plans" original-title="">Plans &amp; pricing</a>
+  </li>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="DocumentationHome" href="https://confluence.atlassian.com/display/BITBUCKET" original-title="">Documentación</a>
+  </li>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="DocumentationAPI" href="https://confluence.atlassian.com/x/IYBGDQ" original-title="">API</a>
+  </li>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="SiteStatus" href="http://status.bitbucket.org/" original-title="">Site status</a>
+  </li>
+  <li>
+    <a class="support-ga" id="meta-info" data-support-gaq-page="MetaInfo" href="https://bitbucket.org/#" original-title="">Version info</a>
+  </li>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="EndUserAgreement" href="https://www.atlassian.com/end-user-agreement?utm_source=bitbucket&utm_medium=link&utm_campaign=footer" original-title="">Terms of service</a>
+  </li>
+  <li>
+    <a class="support-ga" target="_blank" data-support-gaq-page="PrivacyPolicy" href="https://www.atlassian.com/company/privacy?utm_source=bitbucket&utm_medium=link&utm_campaign=footer" original-title="">Privacy policy</a>
+  </li>
+</ul>
+<div id="meta-info-content" style="display: none;">
+  <ul>
+    
+      <li><a href="https://bitbucket.org/account/user/byronsliger/" class="view-language-link" original-title="">español</a></li>
+    
+    <li>
+      <a class="support-ga" target="_blank" data-support-gaq-page="GitDocumentation" href="http://git-scm.com/" original-title="">Git 2.1.1</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank" data-support-gaq-page="HgDocumentation" href="http://mercurial.selenic.com/" original-title="">Mercurial 2.9</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank" data-support-gaq-page="DjangoDocumentation" href="https://www.djangoproject.com/" original-title="">Django 1.7.8</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank" data-support-gaq-page="PythonDocumentation" href="http://www.python.org/" original-title="">Python 2.7.3</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank" data-support-gaq-page="DeployedVersion" href="https://bitbucket.org/#" original-title="">b2097ad76720 / b2097ad76720 @ app-106</a>
+    </li>
+  </ul>
+</div>
+<ul class="atlassian-links">
+  <li>
+    <a id="atlassian-jira-link" target="_blank" href="http://www.atlassian.com/software/jira?utm_source=bitbucket&utm_medium=link&utm_campaign=bitbucket_footer" original-title="Track everything – bugs, tasks, deadlines, code – and pull reports to stay informed.">JIRA</a>
+  </li>
+  <li>
+    <a id="atlassian-confluence-link" target="_blank" href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=bitbucket&utm_medium=link&utm_campaign=bitbucket_footer" original-title="Content Creation, Collaboration &amp; Knowledge Sharing for Teams.">Confluence</a>
+  </li>
+  <li>
+    <a id="atlassian-bamboo-link" target="_blank" href="http://www.atlassian.com/software/bamboo/overview?utm_source=bitbucket&utm_medium=link&utm_campaign=bitbucket_footer" original-title="Continuous integration and deployment, release management.">Bamboo</a>
+  </li>
+  <li>
+    <a id="atlassian-sourcetree-link" target="_blank" href="http://www.sourcetreeapp.com/?utm_source=bitbucket&utm_medium=link&utm_campaign=bitbucket_footer" original-title="A free Git and Mercurial desktop client for Mac or Windows.">SourceTree</a>
+  </li>
+  <li>
+    <a id="atlassian-hipchat-link" target="_blank" href="http://www.hipchat.com/?utm_source=bitbucket&utm_medium=link&utm_campaign=bitbucket_footer" original-title="Group chat and IM built for teams.">HipChat</a>
+  </li>
+</ul>
+<div id="footer-logo">
+  <a target="_blank" href="http://www.atlassian.com/?utm_source=bitbucket&utm_medium=logo&utm_campaign=bitbucket_footer" original-title="Bitbucket es desarrollado por Atlassian en San Francisco y Austin.">Atlassian</a>
+</div>
+
+    </section>
+  </footer>
+</div>
+
+
+  
+  
+
+
+<script src="./byronsliger _ home — Bitbucket_files/djangojs.js"></script>
+<script src="./byronsliger _ home — Bitbucket_files/vendor.js"></script>
+<script src="./byronsliger _ home — Bitbucket_files/app.js"></script><div class="aui-popup aui-dialog" style="margin-top: -240px; margin-left: -320px; width: 640px; height: 480px; z-index: 3002; display: none;"><div class="dialog-components"><ul class="dialog-page-menu" style="height: 480px;"></ul><div class="dialog-page-body"></div></div></div>
+
+
+<script>
+  (function () {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  }());
+</script>
+
+
+  
+
+<div data-modules="components/mentions/index">
+  <script id="mention-result" type="text/html">
+    
+<div class="aui-avatar aui-avatar-small">
+  <div class="aui-avatar-inner">
+    <img src="[[avatar_url]]">
+  </div>
+</div>
+[[#display_name]]
+  <span class="display-name">[[&display_name]]</span> <small class="username">[[&username]]</small>
+[[/display_name]]
+[[^display_name]]
+  <span class="username">[[&username]]</span>
+[[/display_name]]
+[[#is_teammate]][[^is_team]]
+  <span class="aui-lozenge aui-lozenge-complete aui-lozenge-subtle">Compañero de equipo</span>
+[[/is_team]][[/is_teammate]]
+
+  </script>
+  <script id="mention-call-to-action" type="text/html">
+    
+[[^query]]
+<li class="bb-typeahead-item">Empieza a escribir para buscar un usuario</li>
+[[/query]]
+[[#query]]
+<li class="bb-typeahead-item">Sigue escribiendo para buscar un usuario</li>
+[[/query]]
+
+  </script>
+  <script id="mention-no-results" type="text/html">
+    
+[[^searching]]
+<li class="bb-typeahead-item">No hemos encontrado coincidencias para <em>[[query]]</em>.</li>
+[[/searching]]
+[[#searching]]
+<li class="bb-typeahead-item bb-typeahead-searching">Buscando <em>[[query]]</em>.</li>
+[[/searching]]
+
+  </script>
+</div>
+<div data-modules="components/typeahead/emoji/index">
+  <script id="emoji-result" type="text/html">
+    
+<div class="aui-avatar aui-avatar-small">
+  <div class="aui-avatar-inner">
+    <img src="[[src]]">
+  </div>
+</div>
+<span class="name">[[&name]]</span>
+
+  </script>
+</div>
+
+<div data-modules="components/repo-typeahead/index">
+  <script id="repo-typeahead-result" type="text/html">
+    <span class="aui-avatar aui-avatar-project aui-avatar-xsmall">
+  <span class="aui-avatar-inner">
+    <img src="[[avatar]]">
+  </span>
+</span>
+<span class="owner">[[&owner]]</span>/<span class="slug">[[&slug]]</span>
+
+  </script>
+</div>
+<script id="share-form-template" type="text/html">
+    
+
+<div class="error aui-message hidden">
+  <span class="aui-icon icon-error"></span>
+  <div class="message"></div>
+</div>
+<form class="aui">
+  <table class="widget bb-list aui">
+    <thead>
+    <tr class="assistive">
+      <th class="user">Usuario</th>
+      <th class="role">Rol</th>
+      <th class="actions">Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr class="form">
+        <td colspan="2">
+          <input type="text" class="text bb-user-typeahead user-or-email"
+                 placeholder="Usuario o correo electrónico."
+                 autocomplete="off"
+                 data-bb-typeahead-focus="false"
+                 [[#disabled]]disabled[[/disabled]]>
+        </td>
+        <td class="actions">
+          <button type="submit" class="aui-button aui-button-light" disabled>Agregar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+  </script>
+<script id="share-detail-template" type="text/html">
+    
+
+[[#username]]
+<td class="user
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]"
+    [[#error]]data-error="[[error]]"[[/error]]>
+  <div title="[[displayName]]">
+    <a href="/[[username]]/" class="user">
+      <span class="aui-avatar aui-avatar-xsmall">
+        <span class="aui-avatar-inner">
+          <img src="[[avatar]]">
+        </span>
+      </span>
+      <span>[[displayName]]</span>
+    </a>
+  </div>
+</td>
+[[/username]]
+[[^username]]
+<td class="email
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]"
+    [[#error]]data-error="[[error]]"[[/error]]>
+  <div title="[[email]]">
+    <span class="aui-icon aui-icon-small aui-iconfont-email"></span>
+    [[email]]
+  </div>
+</td>
+[[/username]]
+<td class="role
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]">
+  <div>
+    [[#group]]
+      [[#hasCustomGroups]]
+        <select class="group [[#noGroupChoices]]hidden[[/noGroupChoices]]">
+          [[#groups]]
+            <option value="[[slug]]"
+                [[#isSelected]]selected[[/isSelected]]>
+              [[name]]
+            </option>
+          [[/groups]]
+        </select>
+      [[/hasCustomGroups]]
+      [[^hasCustomGroups]]
+      <label>
+        <input type="checkbox" class="admin"
+            [[#isAdmin]]checked[[/isAdmin]]>
+        Administrador
+      </label>
+      [[/hasCustomGroups]]
+    [[/group]]
+    [[^group]]
+      <ul>
+        <li class="permission aui-lozenge aui-lozenge-complete
+            [[^read]]aui-lozenge-subtle[[/read]]"
+            data-permission="read">
+          leído
+        </li>
+        <li class="permission aui-lozenge aui-lozenge-complete
+            [[^write]]aui-lozenge-subtle[[/write]]"
+            data-permission="write">
+          escribir
+        </li>
+        <li class="permission aui-lozenge aui-lozenge-complete
+            [[^admin]]aui-lozenge-subtle[[/admin]]"
+            data-permission="admin">
+          administrador
+        </li>
+      </ul>
+    [[/group]]
+  </div>
+</td>
+<td class="actions
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]">
+  <div>
+    <a href="#" class="delete">
+      <span class="aui-icon aui-icon-small aui-iconfont-remove">Eliminar</span>
+    </a>
+  </div>
+</td>
+
+  </script>
+<script id="share-team-template" type="text/html">
+    
+
+<div class="clearfix">
+  <span class="team-avatar-container">
+    <span class="aui-avatar aui-avatar-medium">
+      <span class="aui-avatar-inner">
+        <img src="[[avatar]]">
+      </span>
+    </span>
+  </span>
+  <span class="team-name-container">
+    [[display_name]]
+  </span>
+</div>
+<p class="helptext">
+  
+Los usuarios existentes tendrán acceso a este equipo de forma inmediata.
+Se enviará una invitación a los nuevos usuarios.
+  
+</p>
+<div class="share-form"></div>
+
+  </script>
+<script id="scope-list-template" type="text/html">
+    <ul class="scope-list">
+  [[#scopes]]
+    <li class="scope-list--item">
+      <span class="scope-list--icon aui-icon aui-icon-small [[icon]]"></span>
+      [[description]]
+    </li>
+  [[/scopes]]
+</ul>
+
+  </script>
+
+
+  
+
+
+
+
+<aui-inline-dialog id="super-touch-point-dialog" data-aui-alignment="bottom right" data-aui-alignment-static="true" data-modules="header/help-menu,connect/connect-views,connect/super-touch-point" responds-to="toggle" aria-hidden="true" class="aui-layer" resolved=""><div class="aui-inline-dialog-contents">
+
+    <div id="ace-stp-section" class="no-touch-point">
+      <div id="ace-stp-help-section">
+        <h1 class="ace-stp-heading">Ayuda</h1>
+
+        <form id="ace-stp-search-form" class="aui" target="_blank" method="get" action="https://support.atlassian.com/customer/search">
+          <span id="stp-search-icon" class="aui-icon aui-icon-large aui-iconfont-search"></span>
+          <input id="ace-stp-search-form-input" name="q" class="text" type="text" placeholder="Ask a question">
+        </form>
+
+        <ul id="ace-stp-help-links">
+          <li>
+            <a class="support-ga" data-support-gaq-page="DocumentationHome" href="https://confluence.atlassian.com/x/bgozDQ" target="_blank">
+              Online help
+            </a>
+          </li>
+          <li>
+            <a class="support-ga" data-support-gaq-page="GitTutorials" href="https://www.atlassian.com/git?utm_source=bitbucket&utm_medium=link&utm_campaign=help_dropdown&utm_content=learn_git" target="_blank">
+              Learn Git
+            </a>
+          </li>
+          <li>
+            <a id="keyboard-shortcuts-link" href="https://bitbucket.org/#">Keyboard shortcuts</a>
+          </li>
+          <li>
+            <a href="https://bitbucket.org/whats-new/" id="features-link">
+              Últimas funcionalidades
+            </a>
+          </li>
+          <li>
+            <a class="support-ga" data-support-gaq-page="DocumentationTutorials" href="https://confluence.atlassian.com/x/Q4sFLQ" target="_blank">
+              Bitbucket tutorials
+            </a>
+          </li>
+          <li>
+            <a class="support-ga" data-support-gaq-page="SiteStatus" href="http://status.bitbucket.org/" target="_blank">
+              Site status
+            </a>
+          </li>
+          <li>
+            <a class="support-ga" data-support-gaq-page="Home" href="https://bitbucket.org/support">
+              Support
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      
+    </div>
+</div></aui-inline-dialog>
+  
+
+
+  <div class="omnibar" data-modules="components/omnibar/index">
+    <form class="omnibar-form aui"></form>
+  </div>
+  <script id="omnibar-form-template" type="text/html">
+    <div class="omnibar-input-container">
+  <input class="omnibar-input" type="text">
+</div>
+<ul class="omnibar-result-group-list"></ul>
+
+  </script>
+  <script id="omnibar-blank-slate-template" type="text/html">
+    
+
+<div class="omnibar-blank-slate">Sin resultados</div>
+
+  </script>
+  <script id="omnibar-result-group-list-item-template" type="text/html">
+    <div class="omnibar-result-group-header clearfix">
+  <h2 class="omnibar-result-group-label" title="[[label]]">[[label]]</h2>
+  <span class="omnibar-result-group-context" title="[[context]]">[[context]]</span>
+</div>
+<ul class="omnibar-result-list unstyled-list"></ul>
+
+  </script>
+  <script id="omnibar-result-list-item-template" type="text/html">
+    <span class="omnibar-result-label">[[&label]]</span>
+[[#context]]
+  <span class="omnibar-result-context">[[context]]</span>
+[[/context]]
+
+  </script>
+
+
+
+
+<div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer" id="bb-typeahead-suggestions-7" style="z-index: 5000;" resolved="" aria-hidden="true"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-7" aria-expanded="false" href="#"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer" id="bb-typeahead-suggestions-10" style="z-index: 5000;" resolved="" aria-hidden="true"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-10" aria-expanded="false" href="#"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer aui-dropdown2-tailed bb-mention-input-results" id="bb-typeahead-suggestions-13" style="z-index: 5000;" resolved="" aria-hidden="true"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-13" aria-expanded="false" href="#"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer" id="bb-typeahead-suggestions-18" style="z-index: 5000;" resolved="" aria-hidden="true"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-18" aria-expanded="false" href="#"></div></body></html>
